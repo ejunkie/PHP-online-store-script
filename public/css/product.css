@@ -1,0 +1,105 @@
+body{
+    background-color: rgba(238, 238, 238, 0.34);
+}
+.Product{
+    padding-bottom: 30px;
+    min-height: calc(100vh - 200px);
+    background: #fff;
+    padding-top: 0px;
+    border: 1px solid #ebebe9;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0px;
+    padding: 0px 40px 30px 40px;
+}    
+.name{
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px !important;
+    margin-top: 0px;
+}
+.description{
+    color: #666;
+    font-weight: normal;
+    font-size: 15px;
+}
+.buy_options{
+    margin-top: 25px;
+}
+.buy_options img{
+    max-width: 100%;
+}
+.buy_options .desc_price{
+    color: #222;
+    text-align: left;
+    font-size: 30px;
+    font-weight: normal;
+    background-color: transparent;
+    margin-top: 0px;
+    padding: 0px;
+}
+@media(max-width: 600px){
+    .desc_price{
+        margin-top: 15px !important;
+    }
+}
+.buy_options .padding0{
+    padding: 0px !important;
+    margin: 15px 0px;
+}
+.buy_button{
+    font-size: 17px !important;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0px 0px !important;
+    cursor: pointer;
+    background: #F15A24;
+    width: 100%;
+    border: 1px solid #E54A16;
+    margin: 15px 0px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+.buy_button i{
+    background: #E54A16;
+    float: left;
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 15px;
+    height: 43px;
+    margin-right: -65px;
+    margin-top: 0px;
+    line-height: 32px;
+}
+.details{
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2em;
+    color: #888;
+}
+.box_text {
+    width: 100%;
+    height: 50px;
+    float: left;
+    padding: 5px 10px;
+    border: 1px solid #cecece;
+    background: #fff;
+    border-radius: 3px;
+}
+.contact{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.contact a{
+    color: #f15a24;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.contact a i{
+    font-size: 14px;
+    margin-right: 2px;
+}

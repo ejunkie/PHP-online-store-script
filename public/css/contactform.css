@@ -1,0 +1,91 @@
+.contactForm{
+    max-width: 500px;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    border-left: 4px solid #E54A16;
+    padding: 10px 30px 20px 30px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+        transform: translateX(1000px);
+	    opacity: 0;
+	    transition: all 0.5s ease;
+}
+.contactForm.visible{
+    transform: translateX(0px);
+	opacity: 1;	
+	transition: all 0.5s ease;
+}
+.contactForm .closeBtn{
+	font-size: 12px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    background-color: #555555;
+	color: white;
+}
+.contactForm p{
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	display: block;
+}
+.contactForm span{
+	transition: all 0.3s ease;
+	color: #e54a16;
+}
+.contactForm input:placeholder-shown{
+    margin-bottom: -20px;
+    transition: all 0.2s ease;
+}
+.contactForm input{
+	background: transparent;
+	display: block;
+    border: none;
+    border-bottom: 1px solid #888;
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+    margin-top: 0px;
+    z-index: 999999;
+    position: relative;
+}
+.contactForm input:active, .contactForm input:focus{
+    margin-top: 0px;
+	outline: none;
+    border-bottom: 1px solid #e54a16;
+    transition: all 0.2s ease;
+}
+.contactForm input::placeholder{
+	color: transparent;
+}
+.contactForm input:placeholder-shown + span{
+	color: #888 !important;
+    transition: all 0.2s ease;
+    z-index: -9999;
+    position: relative;
+}
+.contactForm textarea{
+    width: 100%;
+	resize: none;
+	border: none;
+	margin-top: 0px;
+	border-bottom: 1px solid #999;
+	background: transparent;
+}
+.contactForm textarea:focus, .contactForm textarea:active {
+	border-bottom: 1px solid #e54a16;
+	outline: none;
+}
+.contactForm input[type='submit']{
+    margin-top: 20px;
+}
+.contactForm input[type='submit']:hover, .contactForm input[type='submit']:active, .contactForm input[type='submit']:focus{
+	color: #e54a16;
+}
