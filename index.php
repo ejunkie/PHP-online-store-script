@@ -5,7 +5,7 @@ require_once 'EJTemplate.php';
 $router = new AltoRouter();
 
 function show404(){	
-	header('Location: /shop3/404');
+	header('Location: /shop/404');
 	die();
 }
 
@@ -18,7 +18,7 @@ $Page->showSearch = true;
 $Page->selectedCategory = null;
 $Page->clientId = 328984;
 $Page->showTags = true;
-$Page->base = '/shop3';
+$Page->base = '/shop';
 
 $router->setBasePath($Page->base);
 $router->map( 'GET', '/', null, 'shop');

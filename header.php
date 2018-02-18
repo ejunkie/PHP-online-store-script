@@ -3,7 +3,7 @@ $Header = new stdClass();
 if($match['name'] == 'shop' || $match['name'] == 'tags'){
 	$Header->title = $EJ->client->shop_name;
 	if($match['name'] == 'tags')
-		$Header->title = $EJ->client->shop_name." - ".$EJ->appliedTag;
+	$Header->title = $EJ->client->shop_name." - ".$EJ->appliedTag;
 	$Header->description = $EJ->client->shop_name."'s Shop";
 	$Header->logo = $EJ->client->logo;
 	$Header->author = $EJ->client->name;
@@ -49,7 +49,7 @@ if($match['name'] == 'shop' || $match['name'] == 'tags'){
 		<link href="/shop/public/css/style.css" rel="stylesheet">
 		<link href="/shop/public/css/contactform.css" rel="stylesheet">
 		<link href="/shop/public/css/bootstrap.min.css" rel="stylesheet">
-		<script src="/shop/public/js/contactform.js"></script>
+		<script src="/shop/public/js/scripts.js"></script>
 	</head>
 	<body>
 
