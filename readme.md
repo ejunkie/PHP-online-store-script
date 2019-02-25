@@ -54,6 +54,4 @@ Script is used for fetching public products or all products(if **API Key** is pr
 	$EJT = new EJTemplate($Page, null, $EJ);
 	$EJT->generateShop();
 
-> index.php contains the overall code for running a proper shop, with tags, products and page variables. [AltoRouter](http://altorouter.com/) is included for routing.
-
-
+> [index.php](https://github.com/ejunkie/Ejunkie-php-Shop-Script/blob/master/index.php) contains the overall code for running a proper shop, with tags, products and page variables. [AltoRouter](http://altorouter.com/) is included for routing.
