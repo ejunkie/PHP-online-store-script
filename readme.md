@@ -2,10 +2,10 @@
 
 ### Files Required
 - EJParser.php
-* Script is used for fetching public products or all products(if *API Key* is present) from E-junkie.
+	Script is used for fetching public products or all products(if *API Key* is present) from E-junkie.
 
 - EJTemplate.php
-* Script is used for rendering Shop/Product pages. Support themes and [https://www.e-junkie.com/wiki/e-junkie-template-engine](template variables).
+	 Script is used for rendering Shop/Product pages. Support themes and [https://www.e-junkie.com/wiki/e-junkie-template-engine](template variables).
 
 ### Example
 
