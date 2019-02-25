@@ -8,7 +8,7 @@ $Page = new stdClass();
 $Page->url = ""; //base url or sub-folder name
 $Page->location->templates = "./templates";
 $Page->EJ = (object) array(
-	"clientId"=> 328984, #your e-junkie client ID
+	"clientId"=> XXXXX, #your e-junkie client ID
 	"maxRelated"=> 5,
 	"pref" => array( # Item numbers in respective array 
 		"pinned" => [],
@@ -16,7 +16,7 @@ $Page->EJ = (object) array(
 		"hidden" => [],
 		"hide_out_of_stock"=> true, 
 	),
-	"apiKey"=> null #provide key to show all products
+	"apiKey"=> null #provide key to show all products, you can get it from Seller Admin > Products API
 );
 $Page->EJ->selectedCategory = null;
 $Page->EJ->selectedProduct = null;
