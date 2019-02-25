@@ -2,31 +2,32 @@
 
 ### Files Required
 - EJParser.php
-	Script is used for fetching public products or all products(if *API Key* is present) from E-junkie.
+Script is used for fetching public products or all products(if **API Key** is present) from E-junkie.
 
 - EJTemplate.php
-	 Script is used for rendering Shop/Product pages. Support themes and [https://www.e-junkie.com/wiki/e-junkie-template-engine](template variables).
+ Script is used for rendering Shop/Product pages. Support themes and [template variables](https://www.e-junkie.com/wiki/e-junkie-template-engine).
 
 ### Example
 
-*XXXXX* denotes E-junkie Client ID
+**XXXXX** denotes E-junkie Client ID
 
-- Fetch products 
-		<?php
-		require_once "EJParser.php";
-		$EJ = new EJParser(XXXXX); 
-		$Products = $EJ->getProducts();
-- Fetch tag specific products
-		<?php
-		require_once "EJParser.php";
-		$EJ = new EJParser(XXXXX, TAG_NAME); //any tag your products have
-		$Products = $EJ->getTagProducts();
+#### Fetch products 
+	<?php
+	require_once "EJParser.php";
+	$EJ = new EJParser(XXXXX); 
+	$Products = $EJ->getProducts();
 
-- Fetch specific product
-		<?php
-		require_once "EJParser.php";
-		$EJ = new EJParser(XXXXX, null, PRODUCT_NUMBER); //any product number in your account
-		$Product = $EJ->getProduct();
+#### Fetch tag specific products
+	<?php
+	require_once "EJParser.php";
+	$EJ = new EJParser(XXXXX, TAG_NAME); //any tag your products have
+	$Products = $EJ->getTagProducts();
+
+#### Fetch specific product
+	<?php
+	require_once "EJParser.php";
+	$EJ = new EJParser(XXXXX, null, PRODUCT_NUMBER); //any product number in your account
+	$Product = $EJ->getProduct();
 
 >You can also provide your API Key as the 5th Parameter in EJParser constructor to fetch all products from your E-junkie account.
 
@@ -53,6 +54,6 @@
 	$EJT = new EJTemplate($Page, null, $EJ);
 	$EJT->generateShop();
 
-> index.php contains the overall code for running a proper shop, with tags, products and page variables. [http://altorouter.com/](AltoRouter) is included for routing.
+> index.php contains the overall code for running a proper shop, with tags, products and page variables. [AltoRouter](http://altorouter.com/) is included for routing.
 
 
