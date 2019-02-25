@@ -32,7 +32,7 @@ Script is used for fetching public products or all products(if **API Key** is pr
 >You can also provide your API Key as the 5th Parameter in EJParser constructor to fetch all products from your E-junkie account.
 
 
-- Generate Shop/Product Page
+#### Generate Shop/Product Page
 	<?php
 	require_once 'EJParser.php';
 	require_once 'EJTemplate.php';
