@@ -659,7 +659,7 @@ class EJTemplate{
 
 	function generateShop(){
 
-		if(count($this->EJ->products) > 1){
+		if(!$this->EJ->selectedProduct){
 			$shop = true; //shop/tags page
 		}else{
 			$shop = false; //product page
